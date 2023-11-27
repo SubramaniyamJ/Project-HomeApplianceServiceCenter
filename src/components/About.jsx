@@ -3,7 +3,7 @@ import Footer from './Footer'
 
 const AboutAs = () => {
   return (
-    <div>
+    <div style={{marginTop : '90px'}}>
         <div>
             <p>
  <u><h2>About Us</h2></u>

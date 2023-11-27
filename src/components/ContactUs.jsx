@@ -2,8 +2,8 @@ import React from "react";
 import Footer from './Footer';
 
 const ContactUs = () => {
-  return (
-    <div> 
+  return ( 
+    <div style={{marginTop : '90px'}}> 
       <u>
         <h2>Contact Us</h2>
       </u>

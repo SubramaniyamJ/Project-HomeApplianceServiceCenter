@@ -10,7 +10,8 @@ const Footer = () => {
         spacing={20}
         direction={"row"}
         justifyContent={"center"}
-        style={{ padding: "90px", background: "#03fcad" }}
+        
+        style={{ padding: "90px", background: "#03fcad" , borderTop : 'solid 2px', borderColor : "black"}}
       >
         <Stack spacing={2}>
           <Typography variant="h5" fontFamily={"Poppins"} fontWeight={"bold"}>

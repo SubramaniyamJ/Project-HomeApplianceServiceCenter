@@ -8,6 +8,7 @@ import { RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
 import Pricing from "./components/Pricing";
 import Service from "./components/Service";
+import ComplaintForm from './components/WarrentyService';
 import { createContext } from "react";
 import {
   createBrowserRouter,
@@ -17,6 +18,7 @@ import {
 import ContactUs from "./components/ContactUs";
 import About from "./components/About";
 import { userContext } from "./components/Context";
+import RefrigiratorForm from "./components/Refigirator";
 
 const route = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +30,8 @@ const route = createBrowserRouter(
       <Route path="/pricing" element={<Pricing />} />
       <Route path="/about" element={<About />} />
       <Route path="/contactus" element={<ContactUs />} />
+      <Route path="/warrentyservice" element={<ComplaintForm/>} />
+      <Route path="/refrigirator" element={<RefrigiratorForm/>} />
     </Route>
   )
 );

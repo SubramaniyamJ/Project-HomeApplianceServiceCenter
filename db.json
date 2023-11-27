@@ -42,7 +42,6 @@
       "email": "rheni@gmail.com",
       "id": 11
     },
-    
     {
       "name": "sachuu",
       "password": "1234",
@@ -55,7 +54,6 @@
       "email": "adf@gmail.com",
       "id": 14
     },
-    
     {
       "name": "s",
       "password": "1234",
@@ -79,6 +77,18 @@
       "password": "1234",
       "email": "sabari@gmail.com",
       "id": 21
+    },
+    {
+      "name": "srinithi",
+      "password": "12345678",
+      "email": "srinithi@gmail.com",
+      "id": 22
+    },
+    {
+      "name": "thanush",
+      "password": "12345678",
+      "email": "thanush@gmail.com",
+      "id": 23
     }
   ]
 }

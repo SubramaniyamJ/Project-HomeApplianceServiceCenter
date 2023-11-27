@@ -24,6 +24,7 @@ import img from "./img/background-imag.jpg";
 import imag from "./img/appliance3.jpg";
 import imag1 from "./img/appliance6.webp";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const setFullSize = {
@@ -163,8 +164,9 @@ const HomePage = () => {
           <br></br>
           <Stack direction={"row"} spacing={5} style={{}}>
             <Stack alignItems={"center"} spacing={2}>
-              <Button fontFamily={"Poppins"}>
-                <Paper
+              <Link to = '/refrigirator'>
+                 <Button fontFamily={"Poppins"}>
+               <Paper
                   elevation={15}
                   style={{
                     height: "250px",
@@ -178,6 +180,8 @@ const HomePage = () => {
                   <KitchenIcon style={IconButtonSize} />{" "}
                 </Paper>
               </Button>
+              </Link>
+             
               <Typography variant="h5" fontFamily={"Poppins"}>
                 Refrigirator
               </Typography>
