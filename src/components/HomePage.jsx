@@ -188,6 +188,7 @@ const HomePage = () => {
             </Stack>
 
             <Stack alignItems={"center"} spacing={2}>
+              <Link to = '/washingmachine'>
               <Button fontFamily={"Poppins"}>
                 <Paper
                   elevation={15}
@@ -203,12 +204,14 @@ const HomePage = () => {
                   <LocalLaundryServiceIcon style={IconButtonSize} />
                 </Paper>
               </Button>
+              </Link>
               <Typography variant="h5" fontFamily={"Poppins"}>
                 Washing Machine
               </Typography>
             </Stack>
 
             <Stack alignItems={"center"} spacing={2}>
+            <Link to = '/television'>
               <Button fontFamily={"Poppins"}>
                 <Paper
                   elevation={15}
@@ -224,12 +227,14 @@ const HomePage = () => {
                   <TvIcon style={IconButtonSize} />
                 </Paper>
               </Button>
+              </Link>
               <Typography variant="h5" fontFamily={"Poppins"}>
                 Television
               </Typography>
             </Stack>
 
             <Stack alignItems={"center"} spacing={2}>
+            <Link to = '/microwaveoven'>
               <Button>
                 <Paper
                   elevation={15}
@@ -245,12 +250,14 @@ const HomePage = () => {
                   <MicrowaveIcon style={IconButtonSize} />
                 </Paper>
               </Button>
+              </Link>
               <Typography variant="h5" fontFamily={"Poppins"}>
                 Microwave Oven
               </Typography>
             </Stack>
 
             <Stack alignItems={"center"} spacing={2}>
+              <Link to = '/airconditioner'>
               <Button>
                 <Paper
                   elevation={15}
@@ -266,6 +273,7 @@ const HomePage = () => {
                   <AirIcon style={IconButtonSize} />
                 </Paper>
               </Button>
+              </Link>
               <Typography variant="h5" fontFamily={"Poppins"}>
                 Air Conditioner
               </Typography>

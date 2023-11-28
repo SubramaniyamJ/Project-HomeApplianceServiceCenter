@@ -8,6 +8,7 @@ import { RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
 import Pricing from "./components/Pricing";
 import Service from "./components/Service";
+import RedirectPage from "./components/RedirectPage"
 import ComplaintForm from './components/WarrentyService';
 import { createContext } from "react";
 import {
@@ -18,7 +19,8 @@ import {
 import ContactUs from "./components/ContactUs";
 import About from "./components/About";
 import { userContext } from "./components/Context";
-import RefrigiratorForm from "./components/Refigirator";
+import RepairForm from "./components/RepairForm";
+
 
 const route = createBrowserRouter(
   createRoutesFromElements(
@@ -31,7 +33,12 @@ const route = createBrowserRouter(
       <Route path="/about" element={<About />} />
       <Route path="/contactus" element={<ContactUs />} />
       <Route path="/warrentyservice" element={<ComplaintForm/>} />
-      <Route path="/refrigirator" element={<RefrigiratorForm/>} />
+      <Route path="/refrigirator" element={<RepairForm machine = "Refrigirator"/>} />
+      <Route path="/washingmachine" element={<RepairForm machine = "Washing Machine"/>} />
+      <Route path="/television" element={<RepairForm machine = "Television"/>} />
+      <Route path="/microwaveoven" element={<RepairForm machine = "MicroWave Oven"/>} />
+      <Route path="/airconditioner" element={<RepairForm machine = "Air Conditioner"/>} />
+      <Route path="/homeredirect" element={<RedirectPage/>} />
     </Route>
   )
 );

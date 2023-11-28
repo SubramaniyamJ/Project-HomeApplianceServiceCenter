@@ -3,8 +3,10 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import styled from '@emotion/styled';
 import { Box, Stack, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
-const FridgeForm = () => {
+const RapairForm = ({machine}) => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     location: null,
     address: '',
@@ -40,6 +42,7 @@ const FridgeForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    navigate('/homeredirect');
   };
 
   return (
@@ -51,11 +54,11 @@ const FridgeForm = () => {
             fontFamily={"Poppins"}
             style={{ padding: "80px" }}
           >
-            Fill out the form and get your Refrigirator Repaired{" "}
+            Fill out the form and get your {machine} Repaired{" "}
           </Typography>
       </Box>
     <FormContainer style = {{marginTop : '20px'}}>
-      <FormTitle>Refrigerator Repair Form</FormTitle>
+      <FormTitle>{machine} Repair Form</FormTitle>
       <Stack align={'flex-start'}>
         
       <Form onSubmit={handleSubmit}>
@@ -63,6 +66,7 @@ const FridgeForm = () => {
           <InputLabel htmlFor="location">Location:</InputLabel>
           <Autocomplete
             fullWidth
+            required
             id="location"
             options={locationOptions}
             getOptionLabel={(option) => option.label}
@@ -75,6 +79,7 @@ const FridgeForm = () => {
           <br></br>
           <TextField
             fullWidth
+            required
             id="address"
             name="address"
             value={formData.address}
@@ -86,6 +91,7 @@ const FridgeForm = () => {
           <Autocomplete
             fullWidth
             id="brandName"
+            required
             options={brandOptions}
             getOptionLabel={(option) => option.label}
             onChange={(_, value) => handleChange('brandName', value)}
@@ -97,6 +103,7 @@ const FridgeForm = () => {
           <br></br>
           <TextField
             fullWidth
+            required
             id="modelName"
             name="modelName"
             value={formData.modelName}
@@ -108,6 +115,7 @@ const FridgeForm = () => {
           <br></br>
           <TextField
             fullWidth
+            required
             id="complaint"
             name="complaint"
             multiline
@@ -121,6 +129,7 @@ const FridgeForm = () => {
           <br></br>
           <TextField
             fullWidth
+            required
             id="phoneNumber"
             name="phoneNumber"
             type="tel"
@@ -133,6 +142,7 @@ const FridgeForm = () => {
           <br></br>
           <TextField
             fullWidth
+            required
             id="date"
             name="date"
             type="date"
@@ -185,6 +195,6 @@ const SubmitButton = styled.button`
   cursor: pointer;
   font-size: 16px;
   margin-top: 10px;
-`;   
+`;  
 
-export default FridgeForm;
+export default RapairForm;
